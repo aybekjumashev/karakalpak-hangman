@@ -29,11 +29,18 @@ function App() {
   const loadWords = useCallback(async () => {
     try {
       setGameStatus("loading");
+      console.log("Starting to load words...");
+      
       const fetchedCategories = await fetchKarakalpakWords();
+      
+      console.log("Fetched categories:", fetchedCategories);
+      
       if (fetchedCategories && fetchedCategories.length > 0) {
         setCategories(fetchedCategories);
         setGameStatus("choosing_category");
+        console.log("Successfully loaded categories");
       } else {
+        console.error("No categories received or empty array");
         setGameStatus("error");
       }
     } catch (error) {
