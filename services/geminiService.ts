@@ -4,7 +4,7 @@ export interface WordCategory {
   words: string[];
 }
 
-const WORDS_JSON_URL = './data/words.json';
+const WORDS_JSON_URL = '/data/words.json';
 
 export async function fetchKarakalpakWords(): Promise<WordCategory[]> {  
     try {
