@@ -1,0 +1,5 @@
+{
+  "name": "Karakalpak Hangman",
+  "description": "A classic hangman game using Karakalpak words. Guess the word one letter at a time before the hangman is fully drawn. Words are dynamically fetched using the Gemini API.",
+  "requestFramePermissions": []
+}
